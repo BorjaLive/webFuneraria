@@ -1,0 +1,86 @@
+body{
+    overflow-x: hidden;
+}
+.bg-theme{
+    background-color: #02A552;
+}
+.nav-link{
+    font-size: 22px;
+    font-weight: 400;
+}
+.nav-item{
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    border-color: rgba(255, 255, 255, 0);
+}
+.nav-item.active{
+    border-color: rgb(255, 255, 255);
+}
+a{
+    color: #02A552;
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    color: #02A552;
+    text-decoration: none;
+}
+.preHeader{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.footerAlto{
+    padding: 50px;
+}
+.footerAlto .logo{
+    width: 100%;
+    height: auto;
+}
+.footerAlto h4{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+.footerAlto a{
+    color: white;
+    font-size: 16px;
+}
+.footerAlto a:hover{
+    color: white;
+    text-decoration: none;
+}
+.footerBajo{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(37, 37, 37);
+}
+.bannerPicture{
+    width: 100%;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 150px;
+    background-color: rgb(2, 165, 82);
+    background-image: url(/img/banner.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.bannerPicture h1{
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
