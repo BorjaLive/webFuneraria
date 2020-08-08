@@ -9,6 +9,8 @@
     $MAIL = "vencejocam1@gmail.com";
     $MAIL_USER = "Vencejocam";
     $MAIL_PASS = "colegiovirgendelrocio";
+    $MAIL_TO = "funelagranada@gmail.com";
+    $MAIL_TO_NAME = "funelagranada";
 
     if(empty($_POST["nombre"]) or empty($_POST["apellidos"]) or empty($_POST["email"]) or empty($_POST["mensaje"])){
         header("Location: /contacto?error=1");
@@ -35,8 +37,7 @@
 
 		$mail->setFrom($MAIL, $MAIL_USER);
 		$mail->addReplyTo($_POST["email"], $_POST["nombre"].", ".$_POST["apellidos"]);
-		$mail->addAddress($MAIL, $MAIL_USER);
-		$mail->addBCC('borjainlive@gmail.com');
+		$mail->addAddress($MAIL_TO, $MAIL_TO_NAME);
 
 		$mail->Subject = "WEB Contacto";
 		$mail->Body = "<h1>Contacto por la página web</h1>
