@@ -11,8 +11,6 @@
         <style media="screen">
             .cuerpoAlto{
                 padding: 50px;
-            }
-            .cuerpoAlto h2{
                 text-align: center;
             }
             .cuerpoBajo{
@@ -47,6 +45,13 @@
             .cuerpoBajoTextoB{
                 background-color: #f1f1f1;
             }
+            .diapositivas{
+                background-color: #fff;
+                padding: 50px;
+            }
+            .diapositivas img{
+                width: 80%
+            }
         </style>
         <script>
             $(function(){
@@ -64,6 +69,29 @@
                 <h2>Servicios</h2>
                 Si está buscando una empresa que ofrezca <b>servicios funerarios</b> de calidad y confianza en <a href="/contacto">La Puebla del Río</a>, cuente con nosotros: <a href="/">Funeraria Ntra. Sra. De La Granada</a>.
             </div>
+        </div>
+        <div class="row diapositivas">
+            <img src="/img/diapositivas/Diapositiva1.JPG" alt="" id="imgDiapo" onclick="changeDiapo();" class="mx-auto d-block">
+            <script type="text/javascript">
+                var diapoN = 1;
+                var image = $("#imgDiapo");
+                var downloadingImage = $("<img>");
+                downloadingImage.on("load", function(){
+                    image.attr("src", $(this).attr("src"));
+                });
+                function changeDiapo(){
+                    diapoN++;
+                    if(diapoN == 17)
+                        diapoN = 1;
+    				var url ="/img/diapositivas/Diapositiva"+diapoN+".JPG";
+
+                    var elem = $("#imgDiapo");
+                    elem.fadeTo(500, 0, "swing", function(){
+                        downloadingImage.attr("src", url);
+    					elem.fadeTo(500, 1, "swing");
+                    });
+                }
+            </script>
         </div>
         <div class="row cuerpoBajo d-flex justify-content-center align-items-center">
             <div class="p-2">
