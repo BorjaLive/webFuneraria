@@ -63,6 +63,9 @@
             .contacto h2{
                 margin-bottom: 20px;
             }
+            .c-black{
+                filter: invert(0.75);
+            }
         </style>
         <script>
             $(function(){
@@ -85,10 +88,10 @@
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cuerpoMedioIzquierda">
                 <img src="/img/iconPhoneBig.png" alt="">
                 <h3>Teléfonos</h3>
-                <a href="tel:607377047">607 377 047</a><br>
-                <a href="tel:955770214">955 770 214</a><br>
-                <a href="tel:658993898">658 993 898</a><br>
-                <a href="tel:634757717">634 757 717</a>
+                <img src="/img/iconPhone.png" alt="" class="c-black"><a href="tel:955770214">955 770 214</a><br>
+                <img src="/img/iconWhatsapp.png" alt="" class="c-black"><a href="tel:607377047">607 377 047</a><br>
+                <img src="/img/iconWhatsapp.png" alt="" class="c-black" class="c-black"><a href="tel:658993898">658 993 898</a><br>
+                <img src="/img/iconWhatsapp.png" alt="" class="c-black"><a href="tel:634757717">634 757 717</a>
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <img src="/img/iconMailBig.png" alt="">
