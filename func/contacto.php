@@ -7,7 +7,7 @@
     $MAIL_HOST = "smtp.gmail.com";
     $MAIL_PORT = 587;
     $MAIL = "vencejocam1@gmail.com";
-    $MAIL_USER = "Vencejocam";
+    $MAIL_USER = "funelagranada";
     $MAIL_PASS = "colegiovirgendelrocio";
     $MAIL_TO = "funelagranada@gmail.com";
     $MAIL_TO_NAME = "funelagranada";
