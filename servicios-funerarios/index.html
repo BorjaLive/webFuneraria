@@ -78,6 +78,7 @@
                 var downloadingImage = $("<img>");
                 downloadingImage.on("load", function(){
                     image.attr("src", $(this).attr("src"));
+                    elem.fadeTo(500, 1, "swing");
                 });
                 function changeDiapo(){
                     diapoN++;
@@ -88,7 +89,6 @@
                     var elem = $("#imgDiapo");
                     elem.fadeTo(500, 0, "swing", function(){
                         downloadingImage.attr("src", url);
-    					elem.fadeTo(500, 1, "swing");
                     });
                 }
             </script>
